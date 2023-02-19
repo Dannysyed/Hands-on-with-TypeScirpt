@@ -20,4 +20,31 @@ function createBook(): { name: string } {
 createBook()
 
 
+
+// Type Alias  ### making a custom type
+type User = {
+    name: string,
+    email: string,
+    age: number
+}
+
+function createNewUser(user: User): User {
+    return { name: '', email: 'asdf', age: 12 }
+
+}
+createNewUser({ name: '', email: 'asdf', age: 12 })
+
+// One more example
+
+type Points = {
+    x: string,
+    y: string
+}
+
+function printCoors(pt: Points) {
+    return pt
+}
+printCoors({ x: '2', y: '1' })
+
+
 export { }
