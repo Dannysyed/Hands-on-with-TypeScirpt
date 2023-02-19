@@ -49,10 +49,10 @@ printCoors({ x: '2', y: '1' })
 
 // Read only in type script
 type Users = {
-    readonly _id: string,
+    readonly _id: string, // cannot change the type value 
     name: string,
     email: string,
-    creditcard?: number
+    creditcard?: number    // Using ? as optional
 }
 
 
