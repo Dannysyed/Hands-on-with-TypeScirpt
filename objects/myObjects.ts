@@ -47,4 +47,15 @@ function printCoors(pt: Points) {
 printCoors({ x: '2', y: '1' })
 
 
+// Read only in type script
+type Users = {
+    readonly _id: string,
+    name: string,
+    email: string,
+    creditcard?: number
+}
+
+
+
+
 export { }
